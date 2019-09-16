@@ -1,0 +1,48 @@
+#halloween {
+    color: orange;
+    text-shadow: 3px 3px black;
+    font-size: 300%;
+    font-style: italic;
+    text-indent: 1em;
+}
+
+#halloween2 {
+    text-indent: 3em;
+}
+
+img {
+    float: left;
+    margin: 15px;
+}
+
+#header::first-letter {
+    font-size:200%;
+}
+
+a {
+    color: orange;
+    font-weight: bold;
+}
+
+a:visited {
+    color: orange;
+    font-weight: bold;
+}
+
+a:hover {
+    color: green;
+    font-weight: bold;
+}
+
+li {
+    margin: 10px 0;
+}
+
+footer {
+    font-size: 80%;
+   text-align: center;
+}
+
+body {
+    font-family: sans-serif;
+}
