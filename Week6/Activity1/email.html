@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Home</title>
+	<link href="normalize.css" rel="stylesheet" type="text/css">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+   <main>
+    <header>
+        <div id="imgheader"><img src="pumpkin.gif"></div>
+	    <h1 id="heading1">The Halloween Store</h1>
+	    <h3 id="heading2">For the little Goblin in all of us!</h3>
+	    
+	   <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productlist.html">Product List</a></li>
+            <li><a href="personal.html">Personal</a></li>
+            <li><a href="#">Decorating Ideas</a>
+                <ul>
+                    <li><a href="outdoor.html">Outdoor</a></li>
+                    <li><a href="indoor.html">Indoor</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="treats.html">Treats</a></li>
+                </ul>
+            </li>
+            <li><a href="email.html">Join Email</a></li>
+        </ul>
+    </nav> 
+    </header> 
+    
+    <nav id="sidebar">
+	    <ul>
+            <li><a href="products/props.html">Props</a></li>
+            <li><a href="products/costumes.html">Costumes</a></li>
+	        <li><a href="products/special.html">Special Effects</a></li>
+	        <li><a href="products/masks.html">Masks</a></li>
+	    </ul>
+   </nav>
+   
+   <h1 style="text-align:center">Please enter the following information:</h1>
+      
+
+    <form id="email_form" action="emailcomplete.html">
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname"><br>
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname"><br>
+        <label for="email">Email:</label> 
+        <input type="text" name="email"><br>
+        <label for="zip">Zip Code:</label> <input type="text" name="zipcode" placeholder="Optional but appreciated: 99999"><br>
+        <input type="submit" id="submit" value="Subscribe">
+    </form>
+	<footer>
+        <p>&copy; 2018 Ben Murach</p>
+	</footer>
+    </main>
+</body>
+</html>

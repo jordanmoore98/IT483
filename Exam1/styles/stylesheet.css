@@ -1,0 +1,108 @@
+.left, .right {
+    float: left;
+    width: 16%;
+    text-align: center;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+.right img {
+    max-width: 90%;
+    padding: 5px 5px 5px 5px;
+}
+
+.main {
+    float: left;
+    width: 60%;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+.maincontent {
+    float: right;
+    width: 80%;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: gray;
+}
+
+.menu a:active {
+    background-color: green;
+}
+
+.left ul {
+    text-align: left;
+}
+
+html {
+    background-image: url(../images/pawprints.jpg);
+    background-repeat: repeat;
+    background-size: 500px 500px;
+}
+
+body {
+    box-sizing: border-box;
+    min-width: 500px;
+    max-width: 1500px;
+    margin: auto;
+    background-color: whitesmoke;
+    border: 5px solid black;
+}
+
+footer {
+    text-align: center;
+    border-top: solid black;
+    padding-top: 10px;
+    height: 50px;
+    clear: both;
+    background-image: linear-gradient(-30deg, pink, purple, blue);
+
+}
+
+img {
+    max-width: 50%;
+    padding: 5px 5px 5px 5px;
+}
+
+header {
+    border-bottom: solid black;
+    height: 150px;
+    background-image: linear-gradient(30deg, pink, purple, blue);
+    padding-top: 1px;
+    padding-bottom: 20px;
+}
+
+header h1, h2 {
+    text-align: center;
+    color: snow;
+}
+
+.centerImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
