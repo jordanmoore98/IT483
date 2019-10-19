@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Show letter grade</title>
+	<script>
+        var num;
+        do {
+            num=prompt("Enter number grade from 0 through 100 Or enter 999 to end entries","0");
+        } while (isNaN(num) || num<0 || num>100);
+        
+        var letter;
+        if(num >= 88 && num <= 100)
+            letter = 'A';
+        else if(num >= 80)
+            letter = 'B';
+        else if(num >= 68)
+            letter = 'C'
+        else if(num >= 60)
+            letter = 'D'
+        else
+            letter = 'F';
+        
+        alert("Number grade = " + num + "\nLetter grade = " + letter);
+	</script>
+</head>
+<body>
+	<main>
+    	<h1>This page is displayed after the JavaScript is executed</h1>
+	</main>
+</body>
+</html>
