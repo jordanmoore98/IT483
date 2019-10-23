@@ -33,13 +33,17 @@
 		};
         var clearMiles = function() {
             $("miles").value = "";
-        }        
+        };        
         var clearGallons = function() {
             $("gallons").value = "";
         };
 		window.onload = function() {
             $("calculate").onclick = processEntries;
             $("miles").focus();
+            $("gallons").onfocus = clearGallons;
+            $("gallons").onblur = processEntries;
+            $("miles").onfocus = clearMiles;
+            $("mpg").ondblclick = clearEntries;
         };
     </script>
 </head>
@@ -47,11 +51,11 @@
     <main>
         <h1>Calculate Miles Per Gallon</h1>
         <label for="miles">Miles Driven:</label>
-		<input type="text" id="miles" onfocus="clearMiles()"><br>
+		<input type="text" id="miles"><br>
         <label for="gallons">Gallons of Gas Used:</label>
-        <input type="text" id="gallons" onfocus="clearGallons()" onfocusout="processEntries()"><br>
+        <input type="text" id="gallons"><br>
         <label for="mpg">Miles Per Gallon</label>
-        <input type="text" id="mpg" ondblclick="clearEntries()"><br>
+        <input type="text" id="mpg"><br>
         <label>&nbsp;</label>
         <input type="button" id="calculate" value="Calculate MPG"><br>
     </main>
